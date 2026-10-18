@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pickup Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏀 Pickup Game</h1>
+
+  <!-- Home screen -->
+  <div id="home">
+    <h2>Start a new game</h2>
+    <button id="create">Create a room</button>
+
+    <h2>Or join one</h2>
+    <input id="code" placeholder="Room code" maxlength="5">
+    <button id="join">Join</button>
+    <p id="error"></p>
+  </div>
+
+  <!-- Room screen -->
+  <div id="room" style="display:none">
+    <p>Room code: <strong id="roomcode"></strong></p>
+    <button id="copylink">Copy invite link</button>
+
+    <h2>Players:</h2>
+    <input id="name" placeholder="Your name">
+    <button id="add">Count me in</button>
+    <ul id="list"></ul>
+
+    <h2>📍 Where should we play?</h2>
+    <a href="https://www.google.com/maps/search/basketball+courts+near+me" target="_blank">Find real courts on Google Maps</a>
+    <br><br>
+    <input id="court" placeholder="Suggest a court name">
+    <button id="suggest">Suggest</button>
+    <ul id="courts"></ul>
+
+    <h2>💬 Tell the crew</h2>
+    <button id="text">Text the group</button>
+    <button id="copy">Copy message</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
